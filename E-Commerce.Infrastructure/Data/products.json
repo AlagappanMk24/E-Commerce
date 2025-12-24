@@ -1,0 +1,38 @@
+[
+  {
+    "id": 102,
+    "brand": "Urban Living",
+    "category": "Dining Room Furniture",
+    "category_image": "images/1-category.jpg"
+  },
+  {
+    "id": 104,
+    "brand": "Iron & Wood Co.",
+    "category": "Dining Room Furniture",
+    "category_image": "images/2-category.jpg"
+  },
+  {
+    "id": 105,
+    "brand": "Studio K",
+    "category": "Kitchen Furniture",
+    "category_image": "images/3-category.jpg"
+  },
+  {
+    "id": 106,
+    "brand": "Royal Interiors",
+    "category": "Dining Room Furniture",
+    "category_image": "images/4-category.jpg"
+  },
+  {
+    "id": 107,
+    "brand": "SpaceCrafts",
+    "category": "Dining Room Furniture",
+    "category_image": "images/5-category.jpg"
+  },
+  {
+    "id": 108,
+    "brand": "Vintage Barn",
+    "category": "Dining Room Furniture",
+    "category_image": "images/6-category.jpg"
+  }
+]

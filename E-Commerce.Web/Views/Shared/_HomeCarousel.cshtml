@@ -1,0 +1,231 @@
+﻿<div id="homeCarousel" class="jq-carousel">
+    <div class="jq-carousel-indicators">
+        <span class="active" data-slide="0"></span>
+        <span data-slide="1"></span>
+        <span data-slide="2"></span>
+        <span data-slide="3"></span>
+        <span data-slide="4"></span>
+    </div>
+
+    <div class="jq-carousel-inner">
+        <div class="jq-carousel-item active">
+            <img src="~/images/2000-D.jpg" alt="Slide 1">
+        </div>
+
+        <div class="jq-carousel-item">
+            <img src="~/images/2000-D.jpg" alt="Slide 2">
+        </div>
+
+        <div class="jq-carousel-item">
+            <img src="~/images/2000-D.jpg" alt="Slide 3">
+        </div>
+
+        <div class="jq-carousel-item">
+            <img src="~/images/2000-D.jpg" alt="Slide 4">
+        </div>
+
+        <div class="jq-carousel-item">
+            <img src="~/images/2000-D.jpg" alt="Slide 5">
+        </div>
+    </div>
+
+    <button class="jq-carousel-prev">&#10094;</button>
+    <button class="jq-carousel-next">&#10095;</button>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        let currentIndex = 0;
+        let slides = $(".jq-carousel-item");
+        let indicators = $(".jq-carousel-indicators span");
+        let totalSlides = slides.length;
+        let interval = 3000;
+        let isAnimating = false;
+
+        function showSlide(index, direction) {
+            if (isAnimating) return;
+            isAnimating = true;
+
+            let $currentSlide = slides.eq(currentIndex);
+            let $nextSlide = slides.eq(index);
+
+            let slideDirection = direction || (index > currentIndex ? 'left' : 'right');
+
+            if (currentIndex === totalSlides - 1 && index === 0) slideDirection = 'left';
+            else if (currentIndex === 0 && index === totalSlides - 1) slideDirection = 'right';
+
+            let startClass = (slideDirection === 'left') ? 'start-right' : 'start-left';
+
+            $nextSlide.addClass('jq-carousel-item-next ' + startClass);
+            $nextSlide[0].offsetHeight;
+
+            $currentSlide.addClass('jq-carousel-item-' + slideDirection);
+            $nextSlide.addClass('jq-carousel-item-' + slideDirection);
+
+            setTimeout(function() {
+                $currentSlide.removeClass('active jq-carousel-item-' + slideDirection);
+                $nextSlide.removeClass('jq-carousel-item-next ' + startClass + ' jq-carousel-item-' + slideDirection).addClass('active');
+
+                indicators.removeClass("active");
+                indicators.eq(index).addClass("active");
+
+                currentIndex = index;
+                isAnimating = false;
+            }, 600);
+        }
+
+        function nextSlide() {
+            let next = (currentIndex + 1) % totalSlides;
+            showSlide(next, 'left');
+        }
+
+        function prevSlide() {
+            let prev = (currentIndex - 1 + totalSlides) % totalSlides;
+            showSlide(prev, 'right');
+        }
+
+        let autoSlide = setInterval(nextSlide, interval);
+
+        $(".jq-carousel-next").click(function () {
+            nextSlide();
+            resetTimer();
+        });
+
+        $(".jq-carousel-prev").click(function () {
+            prevSlide();
+            resetTimer();
+        });
+
+        indicators.click(function () {
+            let index = $(this).data("slide");
+            if (index !== currentIndex) {
+                showSlide(index, index > currentIndex ? 'left' : 'right');
+                resetTimer();
+            }
+        });
+
+        function resetTimer() {
+            clearInterval(autoSlide);
+            autoSlide = setInterval(nextSlide, interval);
+        }
+
+        $("#homeCarousel").hover(
+            function() { clearInterval(autoSlide); },
+            function() { autoSlide = setInterval(nextSlide, interval); }
+        );
+    });
+</script>
+
+<style>
+    .jq-carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .jq-carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .jq-carousel-item {
+        position: relative;
+        display: none;
+        width: 100%;
+        transition: transform 0.6s ease-in-out;
+        backface-visibility: hidden;
+    }
+
+        .jq-carousel-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .jq-carousel-item.active {
+            display: block;
+            transform: translateX(0);
+        }
+
+
+    .jq-carousel-item-next.start-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        transform: translateX(100%);
+    }
+
+    .jq-carousel-item-next.start-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        transform: translateX(-100%);
+    }
+
+
+    .jq-carousel-item.active.jq-carousel-item-left {
+        transform: translateX(-100%);
+    }
+
+    .jq-carousel-item.active.jq-carousel-item-right {
+        transform: translateX(100%);
+    }
+
+    .jq-carousel-item-next.jq-carousel-item-left,
+    .jq-carousel-item-next.jq-carousel-item-right {
+        transform: translateX(0);
+    }
+
+    .jq-carousel-prev, .jq-carousel-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0,0,0,0.5);
+        color: #fff;
+        border: none;
+        font-size: 28px;
+        padding: 8px 14px;
+        cursor: pointer;
+        z-index: 10;
+        transition: background 0.3s ease;
+    }
+
+        .jq-carousel-prev:hover, .jq-carousel-next:hover {
+            background: rgba(0,0,0,0.8);
+        }
+
+    .jq-carousel-prev {
+        left: 10px;
+    }
+
+    .jq-carousel-next {
+        right: 10px;
+    }
+
+    .jq-carousel-indicators {
+        position: absolute;
+        bottom: 15px;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+    }
+
+        .jq-carousel-indicators span {
+            display: inline-block;
+            width: 40px;
+            height: 3px;
+            background: rgba(255,255,255,0.4);
+            margin: 0 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .jq-carousel-indicators span.active {
+                background: #ffffff;
+            }
+</style>

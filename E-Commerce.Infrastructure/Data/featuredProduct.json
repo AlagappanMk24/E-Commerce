@@ -1,0 +1,841 @@
+[
+  {
+    "id": "1",
+    "name": "Mcneely 13\" Crocodile",
+    "slug": "mcneely-13-crocodile-men-western",
+    "brand": "Justin Boots",
+    "styleNumber": "SJ8116",
+    "price": {
+      "currency": "USD",
+      "amount": 1009.95,
+      "formatted": "$1,009.95"
+    },
+    "category": {
+      "primary": "Men",
+      "section": "Footwear",
+      "subcategory": "Western",
+      "collection": "Justin Exotic"
+    },
+    "description": "Limited Edition. Legendary Appeal.",
+    "url": "/product/1",
+    "features": [ "Exclusive", "Made in USA with Global Parts", "Ortholite®" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": "https://bhsh.widen.net/content/hwjhmq0eyq/jpeg/SJ8116-005.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Rustic",
+        "colorFamily": "Brown",
+        "isSelected": true,
+        "styleRef": "SJ8116",
+        "swatchImage": "https://example.com/swatch-rustic.jpg"
+      }
+    ],
+    "filters": {
+      "style": "Cowboy / Western",
+      "usaMade": true,
+      "size": "9.5",
+      "width": "D - Medium",
+      "toeShape": "Square Toe",
+      "color": "Brown",
+      "vampColor": "Rustic Brown",
+      "upperColor": "Crocodile Rustic",
+      "skin": "Crocodile",
+      "safetyToe": false,
+      "features": [ "Ortholite®", "Exclusive", "Cushioned Insole" ],
+      "sole": "Leather",
+      "heel": "Riding Heel",
+      "bootHeight": "13 inch",
+      "priceRange": "$800-$1200",
+      "collections": [ "Justin Exotic" ],
+      "technology": [ "Ortholite®" ]
+    }
+  },
+  {
+    "id": "01",
+    "name": "Mcneely 13\" Crocodile - Funky Edition",
+    "slug": "mcneely-13-crocodile-funky-edition",
+    "brand": "Justin Boots",
+    "styleNumber": "SJ8116-F",
+    "price": {
+      "currency": "USD",
+      "amount": 1009.95,
+      "formatted": "$1,009.95"
+    },
+    "category": {
+      "primary": "Men",
+      "section": "Footwear",
+      "subcategory": "Western",
+      "collection": "Justin Exotic"
+    },
+    "description": "Limited Edition with a funky twist.",
+    "url": "/product/01",
+    "features": [ "Exclusive", "Made in USA", "Ortholite®" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": "https://bhsh.widen.net/content/hwjhmq0eyq/jpeg/SJ8116-005.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Rustic",
+        "colorFamily": "Brown",
+        "isSelected": true,
+        "styleRef": "SJ8116-F",
+        "swatchImage": "https://example.com/swatch-rustic.jpg"
+      }
+    ],
+    "filters": {
+      "style": "Funky",
+      "usaMade": false,
+      "size": "10.5",
+      "width": "D - Medium",
+      "toeShape": "Square Toe",
+      "color": "Brown",
+      "vampColor": "Rustic Brown",
+      "upperColor": "Crocodile Rustic",
+      "skin": "Crocodile",
+      "safetyToe": false,
+      "features": [ "Ortholite®", "Exclusive", "Cushioned Insole" ],
+      "sole": "Leather",
+      "heel": "Riding Heel",
+      "bootHeight": "13 inch",
+      "priceRange": "$800-$1200",
+      "collections": [ "Justin Exotic" ],
+      "technology": [ "Ortholite®" ]
+    }
+  },
+  {
+    "id": "11",
+    "name": "Mcneely 13\" Crocodile Work",
+    "slug": "mcneely-13-crocodile-work-edition",
+    "brand": "Justin Boots",
+    "styleNumber": "SJ8116-W",
+    "price": {
+      "currency": "USD",
+      "amount": 1009.95,
+      "formatted": "$1,009.95"
+    },
+    "category": {
+      "primary": "Men",
+      "section": "Footwear",
+      "subcategory": "Work",
+      "collection": "Justin Exotic"
+    },
+    "description": "Legendary Appeal, built for work.",
+    "url": "/product/11",
+    "features": [ "Exclusive", "Made in USA", "Ortholite®" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": "https://bhsh.widen.net/content/hwjhmq0eyq/jpeg/SJ8116-005.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Rustic",
+        "colorFamily": "Brown",
+        "isSelected": true,
+        "styleRef": "SJ8116-W",
+        "swatchImage": "https://example.com/swatch-rustic.jpg"
+      }
+    ],
+    "filters": {
+      "style": "Cowboy / Western",
+      "usaMade": true,
+      "size": "10.5",
+      "width": "D - Medium",
+      "toeShape": "Square Toe",
+      "color": "Brown",
+      "vampColor": "Rustic Brown",
+      "upperColor": "Crocodile Rustic",
+      "skin": "Crocodile",
+      "safetyToe": false,
+      "features": [ "Ortholite®", "Exclusive", "Cushioned Insole" ],
+      "sole": "Leather",
+      "heel": "Riding Heel",
+      "bootHeight": "13 inch",
+      "priceRange": "$800-$1200",
+      "collections": [ "Justin Exotic" ],
+      "technology": [ "Ortholite®" ]
+    }
+  },
+  {
+    "id": "21",
+    "name": "Mcneely 13\" Crocodile Casual",
+    "slug": "mcneely-13-crocodile-casuals",
+    "brand": "Justin Boots",
+    "styleNumber": "SJ8116-C",
+    "price": {
+      "currency": "USD",
+      "amount": 1009.95,
+      "formatted": "$1,009.95"
+    },
+    "category": {
+      "primary": "Men",
+      "section": "Footwear",
+      "subcategory": "Casuals",
+      "collection": "Justin Exotic"
+    },
+    "description": "Legendary Appeal for everyday wear.",
+    "url": "/product/21",
+    "features": [ "Exclusive", "Made in USA", "Ortholite®" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": "https://bhsh.widen.net/content/hwjhmq0eyq/jpeg/SJ8116-005.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Rustic",
+        "colorFamily": "Brown",
+        "isSelected": true,
+        "styleRef": "SJ8116-C",
+        "swatchImage": "https://example.com/swatch-rustic.jpg"
+      }
+    ],
+    "filters": {
+      "style": "Cowboy / Western",
+      "usaMade": true,
+      "size": "10.5",
+      "width": "D - Medium",
+      "toeShape": "Square Toe",
+      "color": "Brown",
+      "vampColor": "Rustic Brown",
+      "upperColor": "Crocodile Rustic",
+      "skin": "Crocodile",
+      "safetyToe": false,
+      "features": [ "Ortholite®", "Exclusive", "Cushioned Insole" ],
+      "sole": "Leather",
+      "heel": "Riding Heel",
+      "bootHeight": "13 inch",
+      "priceRange": "$800-$1200",
+      "collections": [ "Justin Exotic" ],
+      "technology": [ "Ortholite®" ]
+    }
+  },
+  {
+    "id": "2",
+    "name": "Women's Gypsy Boot",
+    "slug": "womens-gypsy-boot-western",
+    "brand": "Justin Boots",
+    "styleNumber": "L9903",
+    "price": {
+      "currency": "USD",
+      "amount": 189.95,
+      "formatted": "$189.95"
+    },
+    "category": {
+      "primary": "Women",
+      "section": "Footwear",
+      "subcategory": "Western",
+      "collection": "Justin Gypsy®"
+    },
+    "description": "Feminine style meets western tradition.",
+    "url": "/product/2",
+    "features": [ "Cushion Comfort", "J-Flex®" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": "https://bhsh.widen.net/content/hwjhmq0eyq/jpeg/SJ8116-005.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Tan",
+        "colorFamily": "Brown",
+        "isSelected": true,
+        "styleRef": "L9903",
+        "swatchImage": "https://example.com/swatch-tan.jpg"
+      }
+    ],
+    "filters": {
+      "style": "Cowboy / Western",
+      "usaMade": false,
+      "size": "7",
+      "width": "B - Narrow",
+      "toeShape": "Snip Toe",
+      "color": "Tan",
+      "vampColor": "Tan Distressed",
+      "upperColor": "Aged Leather",
+      "skin": "Cowhide",
+      "safetyToe": false,
+      "features": [ "Cushion Comfort", "Lightweight" ],
+      "sole": "Rubber",
+      "heel": "Fashion Heel",
+      "bootHeight": "11 inch",
+      "priceRange": "$150-$250",
+      "collections": [ "Justin Gypsy®" ],
+      "technology": [ "J-Flex®" ]
+    }
+  },
+  {
+    "id": "3",
+    "name": "Commander X5 Work Boot",
+    "slug": "commander-x5-work-boot-safety-toe",
+    "brand": "Justin Boots",
+    "styleNumber": "WK2104",
+    "price": {
+      "currency": "USD",
+      "amount": 219.95,
+      "formatted": "$219.95"
+    },
+    "category": {
+      "primary": "Work",
+      "section": "Footwear",
+      "subcategory": "Safety Toe",
+      "collection": "Commander"
+    },
+    "description": "Maximum protection for demanding work environments.",
+    "url": "/product/3",
+    "features": [ "Waterproof", "Electrical Hazard", "Puncture Resistant" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": "https://bhsh.widen.net/content/hwjhmq0eyq/jpeg/SJ8116-005.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "colorFamily": "Black",
+        "isSelected": true,
+        "styleRef": "WK2104",
+        "swatchImage": "https://example.com/swatch-black.jpg"
+      }
+    ],
+    "filters": {
+      "style": "Work",
+      "usaMade": false,
+      "size": "12",
+      "width": "D - Medium",
+      "toeShape": "Composite Toe",
+      "color": "Black",
+      "vampColor": "Black Leather",
+      "upperColor": "Full Grain Black",
+      "skin": "Full Grain Leather",
+      "safetyToe": true,
+      "features": [ "Waterproof", "Electrical Hazard", "Puncture Resistant" ],
+      "sole": "Rubber",
+      "heel": "Work Heel",
+      "bootHeight": "8 inch",
+      "priceRange": "$200-$300",
+      "collections": [ "Commander" ],
+      "technology": [ "Commander X5™", "J-Flex®" ]
+    }
+  },
+  {
+    "id": "4",
+    "name": "Men's Slim Fit Jeans",
+    "slug": "mens-slim-fit-jeans-boot-cut",
+    "brand": "Justin Boots",
+    "styleNumber": "JJ101",
+    "price": {
+      "currency": "USD",
+      "amount": 79.95,
+      "formatted": "$79.95"
+    },
+    "category": {
+      "primary": "Men",
+      "section": "Apparel",
+      "subcategory": "Jeans",
+      "collection": null
+    },
+    "description": "Modern slim fit with western styling.",
+    "url": "/product/4",
+    "features": [ "Stretch Denim", "Boot Cut" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": "https://bhsh.widen.net/content/hwjhmq0eyq/jpeg/SJ8116-005.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Dark Wash",
+        "colorFamily": "Blue",
+        "isSelected": true,
+        "styleRef": "JJ101",
+        "swatchImage": "https://example.com/swatch-darkwash.jpg"
+      }
+    ],
+    "filters": {
+      "productType": "Jeans",
+      "size": "32x34",
+      "color": "Dark Blue",
+      "fit": "Slim Fit",
+      "material": "Denim",
+      "features": [ "Stretch", "Boot Cut" ],
+      "priceRange": "$50-$100",
+      "collections": [],
+      "technology": []
+    }
+  },
+  {
+    "id": "5",
+    "name": "Women's Flannel Shirt",
+    "slug": "womens-flannel-shirt-plaid",
+    "brand": "Justin Boots",
+    "styleNumber": "WS201",
+    "price": {
+      "currency": "USD",
+      "amount": 59.95,
+      "formatted": "$59.95"
+    },
+    "category": {
+      "primary": "Women",
+      "section": "Apparel",
+      "subcategory": "Shirts",
+      "collection": null
+    },
+    "description": "Classic western flannel with modern fit.",
+    "url": "/product/5",
+    "features": [ "100% Cotton", "Pearl Snap Buttons" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": "https://bhsh.widen.net/content/hwjhmq0eyq/jpeg/SJ8116-005.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Red Plaid",
+        "colorFamily": "Red",
+        "isSelected": true,
+        "styleRef": "WS201",
+        "swatchImage": "https://example.com/swatch-redplaid.jpg"
+      }
+    ],
+    "filters": {
+      "productType": "Shirt",
+      "size": "M",
+      "color": "Red",
+      "fit": "Regular Fit",
+      "material": "Cotton",
+      "features": [ "Pearl Snaps", "Long Sleeve" ],
+      "priceRange": "$50-$100",
+      "collections": [],
+      "technology": []
+    }
+  },
+  {
+    "id": "6",
+    "name": "Leather Belt with Buckle",
+    "slug": "leather-belt-with-buckle",
+    "brand": "Justin Boots",
+    "styleNumber": "BL505",
+    "price": {
+      "currency": "USD",
+      "amount": 49.95,
+      "formatted": "$49.95"
+    },
+    "category": {
+      "primary": "Men",
+      "section": "Accessories",
+      "subcategory": "Belts",
+      "collection": null
+    },
+    "description": "Hand-tooled leather belt with western buckle.",
+    "url": "/product/6",
+    "features": [ "Hand-Tooled", "Removable Buckle" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": "https://bhsh.widen.net/content/hwjhmq0eyq/jpeg/SJ8116-005.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Brown",
+        "colorFamily": "Brown",
+        "isSelected": true,
+        "styleRef": "BL505",
+        "swatchImage": "https://example.com/swatch-brown.jpg"
+      }
+    ],
+    "filters": {
+      "productType": "Belt",
+      "size": "36",
+      "color": "Brown",
+      "material": "Leather",
+      "features": [ "Hand-Tooled", "Western Buckle" ],
+      "priceRange": "$25-$50",
+      "collections": [],
+      "technology": []
+    }
+  },
+  {
+    "id": "7",
+    "name": "Kids Western Boot",
+    "slug": "kids-western-boot-junior",
+    "brand": "Justin Boots",
+    "styleNumber": "KD201",
+    "price": {
+      "currency": "USD",
+      "amount": 89.95,
+      "formatted": "$89.95"
+    },
+    "category": {
+      "primary": "Kids",
+      "section": "Footwear",
+      "subcategory": "Junior",
+      "collection": null
+    },
+    "description": "Durable western boot for young riders.",
+    "url": "/product/7",
+    "features": [ "Easy Pull-On", "Cushioned Insole" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": "https://bhsh.widen.net/content/hwjhmq0eyq/jpeg/SJ8116-005.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Brown",
+        "colorFamily": "Brown",
+        "isSelected": true,
+        "styleRef": "KD201",
+        "swatchImage": "https://example.com/swatch-brown.jpg"
+      }
+    ],
+    "filters": {
+      "style": "Western",
+      "usaMade": false,
+      "size": "3",
+      "width": "Medium",
+      "toeShape": "Round Toe",
+      "color": "Brown",
+      "vampColor": "Brown Leather",
+      "upperColor": "Cowhide",
+      "skin": "Cowhide",
+      "safetyToe": false,
+      "features": [ "Pull-On", "Cushioned" ],
+      "sole": "Rubber",
+      "heel": "Low Heel",
+      "bootHeight": "8 inch",
+      "priceRange": "$50-$100",
+      "collections": [],
+      "technology": [],
+      "gender": "Unisex",
+      "ageGroup": "Junior"
+    }
+  },
+  {
+    "id": "8",
+    "name": "Western Hat - Felt",
+    "slug": "western-hat-felt-black",
+    "brand": "Justin Boots",
+    "styleNumber": "HT301",
+    "price": {
+      "currency": "USD",
+      "amount": 129.95,
+      "formatted": "$129.95"
+    },
+    "category": {
+      "primary": "Men",
+      "section": "Accessories",
+      "subcategory": "Western Hats",
+      "collection": null
+    },
+    "description": "Premium felt western hat.",
+    "url": "/product/8",
+    "features": [ "100% Wool Felt", "Leather Band" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": "https://bhsh.widen.net/content/hwjhmq0eyq/jpeg/SJ8116-005.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Black",
+        "colorFamily": "Black",
+        "isSelected": true,
+        "styleRef": "HT301",
+        "swatchImage": "https://example.com/swatch-black.jpg"
+      }
+    ],
+    "filters": {
+      "productType": "Hat",
+      "size": "7 1/4",
+      "color": "Black",
+      "material": "Felt",
+      "features": [ "Leather Band", "Water Resistant" ],
+      "priceRange": "$100-$150",
+      "collections": [],
+      "technology": []
+    }
+  },
+  {
+    "id": "9",
+    "name": "Stampede Rush Waterproof",
+    "slug": "stampede-rush-waterproof-work-boot",
+    "brand": "Justin Boots",
+    "styleNumber": "WK4330",
+    "price": {
+      "currency": "USD",
+      "amount": 169.95,
+      "formatted": "$169.95"
+    },
+    "category": {
+      "primary": "Men",
+      "section": "Footwear",
+      "subcategory": "Work",
+      "collection": "Stampede Rush"
+    },
+    "description": "Athletic feel with heavy duty protection.",
+    "url": "/product/9",
+    "features": [ "Waterproof", "Flexible", "Oil Resisting" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": "https://bhsh.widen.net/content/hwjhmq0eyq/jpeg/SJ8116-005.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Barley",
+        "colorFamily": "Brown",
+        "isSelected": true,
+        "styleRef": "WK4330",
+        "swatchImage": "https://example.com/swatch-barley.jpg"
+      }
+    ],
+    "filters": {
+      "style": "Work",
+      "usaMade": false,
+      "size": "11",
+      "width": "EE - Wide",
+      "toeShape": "Square Toe",
+      "color": "Brown",
+      "vampColor": "Barley Brown",
+      "upperColor": "Mustard",
+      "skin": "Leather",
+      "safetyToe": true,
+      "features": [ "Waterproof", "Flexible" ],
+      "sole": "Rubber",
+      "heel": "Work Heel",
+      "bootHeight": "11 inch",
+      "priceRange": "$150-$200",
+      "collections": [ "Stampede Rush" ],
+      "technology": [ "Stampede Rush" ]
+    }
+  },
+  {
+    "id": "10",
+    "name": "Bent Rail Square Toe",
+    "slug": "womens-bent-rail-square-toe-boot",
+    "brand": "Justin Boots",
+    "styleNumber": "BRL331",
+    "price": {
+      "currency": "USD",
+      "amount": 209.95,
+      "formatted": "$209.95"
+    },
+    "category": {
+      "primary": "Women",
+      "section": "Footwear",
+      "subcategory": "Western",
+      "collection": "Bent Rail"
+    },
+    "description": "Performance boots with bold style.",
+    "url": "/product/10",
+    "features": [ "Made in USA", "Performance Outsole" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": "https://bhsh.widen.net/content/hwjhmq0eyq/jpeg/SJ8116-005.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Turquoise/Brown",
+        "colorFamily": "Multi",
+        "isSelected": true,
+        "styleRef": "BRL331",
+        "swatchImage": "https://example.com/swatch-turquoise.jpg"
+      }
+    ],
+    "filters": {
+      "style": "Performance",
+      "usaMade": true,
+      "size": "8",
+      "width": "B - Medium",
+      "toeShape": "Wide Square Toe",
+      "color": "Brown",
+      "vampColor": "Chocolate",
+      "upperColor": "Turquoise",
+      "skin": "Cowhide",
+      "safetyToe": false,
+      "features": [ "Made in USA", "J-Flex" ],
+      "sole": "Leather/Rubber Hybrid",
+      "heel": "Walking Heel",
+      "bootHeight": "11 inch",
+      "priceRange": "$200-$300",
+      "collections": [ "Bent Rail" ],
+      "technology": [ "J-Flex®" ]
+    }
+  },
+  {
+    "id": "12",
+    "name": "Logo Graphic Tee",
+    "slug": "mens-logo-graphic-tee",
+    "brand": "Justin Boots",
+    "styleNumber": "TS1001",
+    "price": {
+      "currency": "USD",
+      "amount": 29.95,
+      "formatted": "$29.95"
+    },
+    "category": {
+      "primary": "Men",
+      "section": "Apparel",
+      "subcategory": "T-Shirts",
+      "collection": null
+    },
+    "description": "Soft cotton blend tee with vintage logo.",
+    "url": "/product/12",
+    "features": [ "Cotton Blend", "Screen Print" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": null
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Heather Grey",
+        "colorFamily": "Grey",
+        "isSelected": true,
+        "styleRef": "TS1001",
+        "swatchImage": "https://example.com/swatch-grey.jpg"
+      }
+    ],
+    "filters": {
+      "productType": "Shirt",
+      "size": "L",
+      "color": "Grey",
+      "fit": "Standard",
+      "material": "Cotton Blend",
+      "features": [ "Graphic" ],
+      "priceRange": "$0-$50",
+      "collections": [],
+      "technology": []
+    }
+  },
+  {
+    "id": "13",
+    "name": "Bi-Fold Leather Wallet",
+    "slug": "bi-fold-leather-wallet",
+    "brand": "Justin Boots",
+    "styleNumber": "WA500",
+    "price": {
+      "currency": "USD",
+      "amount": 39.95,
+      "formatted": "$39.95"
+    },
+    "category": {
+      "primary": "Men",
+      "section": "Accessories",
+      "subcategory": "Wallets",
+      "collection": null
+    },
+    "description": "Genuine leather bi-fold with embossed logo.",
+    "url": "/product/13",
+    "features": [ "Genuine Leather", "Card Slots" ],
+    "media": {
+      "mainImage": "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no",
+      "onFootImage": null
+    },
+    "image_urls": [
+      "https://bhsh.widen.net/content/hnrmiy2zuw/jpeg/SJ8116-001.jpg?w=400&h=400&quality=80&keep=s&crop=no"
+    ],
+    "variants": [
+      {
+        "color": "Distressed Brown",
+        "colorFamily": "Brown",
+        "isSelected": true,
+        "styleRef": "WA500",
+        "swatchImage": "https://example.com/swatch-dbrown.jpg"
+      }
+    ],
+    "filters": {
+      "productType": "Wallet",
+      "size": "One Size",
+      "color": "Brown",
+      "material": "Leather",
+      "features": [ "Bi-Fold" ],
+      "priceRange": "$25-$50",
+      "collections": [],
+      "technology": []
+    }
+  }
+]

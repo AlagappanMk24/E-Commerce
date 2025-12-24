@@ -1,0 +1,330 @@
+﻿@using E_Commerce.Domain.Models
+@model ProductViewodel
+
+@{
+    ViewData["Title"] = Model.Product.Name;
+}
+
+<div class="container my-5">
+    <div class="row">
+        <!-- Breadcrumb -->
+        <div class="col-12 breadcrumb-section">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    @if (!string.IsNullOrEmpty(Model.Breadcrumb.Primary))
+                    {
+                        <li class="breadcrumb-item">
+                            <a href="/@Model.Breadcrumb.Primary.ToLower()">@Model.Breadcrumb.Primary</a>
+                        </li>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.Breadcrumb.Section))
+                    {
+                        <li class="breadcrumb-item">
+                            <a href="/@Model.Breadcrumb.Primary.ToLower()/@Model.Breadcrumb.Section.ToLower()">@Model.Breadcrumb.Section</a>
+                        </li>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.Breadcrumb.ProductSlug))
+                    {
+                        <li class="breadcrumb-item active" aria-current="page">@Model.Breadcrumb.ProductSlug</li>
+                    }
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="d-flex align-items-start justify-content-center gap-2">
+
+                <div class="d-flex flex-column align-items-start justify-content-center flex-wrap gap-2">
+                    @if (Model.Product.image_urls != null)
+                    {
+                        int maxDisplay = 7;
+                        int totalImages = Model.Product.image_urls.Count;
+
+                        for (int i = 0; i < totalImages; i++)
+                        {
+                            if (i == (maxDisplay - 1) && totalImages > maxDisplay)
+                            {
+                                int remaining = totalImages - (maxDisplay - 1);
+
+                                <div class="more-images-container border rounded">
+                                    <img src="@Model.Product.image_urls[i]" class="w-100 h-100" style="object-fit: cover;">
+                                    <div class="more-overlay">
+                                        +@remaining
+                                    </div>
+                                </div>
+                                break;
+                            }
+                            else if (i < maxDisplay)
+                            {
+                                <div class="thumbnail-box border rounded p-1"
+                                     style="cursor: pointer; width: 70px; height: 70px;">
+
+                                    <img src="@Model.Product.image_urls[i]"
+                                         class="w-100 h-100"
+                                         style="object-fit: cover;"
+                                         alt="Thumbnail">
+                                </div>
+                            }
+                        }
+                    }
+                </div>
+
+                <div class="img-zoom-container border rounded bg-white d-flex align-items-center justify-content-center mb-3 position-relative"
+                     style="height: 500px; width: 500px;">
+
+                    @if (Model.Product.image_urls != null)
+                    {
+                        <img id="mainImage"
+                             src="@(Model.Product.image_urls.Any() ? Model.Product.image_urls[0] : "https://via.placeholder.com/500")"
+                             class="img-fluid"
+                             style="height: 100%; width: 100%; object-fit: cover; cursor: crosshair;"
+                             alt="Product Image">
+                    }
+
+
+                    <div id="zoomLens" class="img-zoom-lens"></div>
+                    <div id="zoomResult" class="img-zoom-result"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <h4 class="fw-bold">@Model.Product.Name</h4>
+            <a href="#" class="text-decoration-none text-primary small">Visit the @Model.Product.Brand Store</a>
+
+            <hr />
+
+            <div class="mb-3">
+                <span class="text-danger h4 mb-0 fw-light">-@Model.Product.Price.DiscountPercentage%</span>
+                <span class="h2 fw-bold ms-2">₹@Model.Product.Price.Amount.ToString("N0")</span>
+                <div class="text-muted small">M.R.P.: <span class="text-decoration-line-through">₹@Model.Product.Price.Amount.ToString("N0")</span></div>
+            </div>
+
+            <div class="mt-4">
+                <h6 class="fw-bold">About this item</h6>
+                <ul class="list-unstyled small mt-2">
+                    @if (Model.Product.Filters.Features != null)
+                    {
+                        foreach (var feature in Model.Product.Filters.Features)
+                        {
+                            <li class="mb-2 d-flex">
+                                <span class="me-2">•</span> <span>@feature</span>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="card shadow-sm p-3">
+                <h4 class="card-title">₹@Model.Product.Price.Amount.ToString("N0")</h4>
+                <div class="text-success small fw-bold mb-3">In Stock</div>
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-warning rounded-pill btn-sm">Add to Cart</button>
+                    <button class="btn btn-warning rounded-pill btn-sm" style="background-color: #fa8900; border:none;">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content" style="height: 80vh;">
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title text-muted">Images</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex h-100 pb-0">
+                <div class="row w-100 h-100">
+                    @if (Model.Product.image_urls != null)
+                    {
+                        <div class="col-md-8 d-flex align-items-center justify-content-center bg-light rounded mb-3" style="height: 500px;">
+                            <img id="modalMainImage" src="@Model.Product.image_urls[0]"
+                                 style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+                        </div>
+                        <div class="col-md-4 h-100 overflow-auto">
+                            <h5 class="fw-normal mb-3">@Model.Product.Name</h5>
+                            <p class="text-muted small">@Model.Product.Brand</p>
+                            <div class="row g-2">
+                                @foreach (var img in Model.Product.image_urls)
+                                {
+                                    <div class="col-4">
+                                        <img src="@img"
+                                             class="img-fluid rounded modal-thumb"
+                                             style="height: 80px; width: 100%; object-fit: cover;">
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        const $container = $('.img-zoom-container');
+        const $mainImage = $('#mainImage');
+        const $lens = $('#zoomLens');
+        const $result = $('#zoomResult');
+        const $thumbnails = $('.thumbnail-box');
+        const $imageContainer = $('.more-images-container, .img-zoom-container');
+        const $modalThumbnails = $('.modal-thumb');
+        let cx, cy;
+
+        $container.on('mouseenter', function () {
+            $lens.show();
+            $result.show();
+
+            cx = $result.outerWidth() / $lens.outerWidth();
+            cy = $result.outerHeight() / $lens.outerHeight();
+
+            const imgSrc = $mainImage.attr('src');
+            $result.css('background-image', `url('${imgSrc}')`);
+
+            const bgW = $mainImage.width() * cx;
+            const bgH = $mainImage.height() * cy;
+            $result.css('background-size', `${bgW}px ${bgH}px`);
+        });
+
+        $container.on('mouseleave', function () {
+            $lens.hide();
+            $result.hide();
+        });
+
+        $container.on('mousemove', function (e) {
+            const offset = $mainImage.offset();
+
+            let x = e.pageX - offset.left;
+            let y = e.pageY - offset.top;
+
+            x = x - ($lens.outerWidth() / 2);
+            y = y - ($lens.outerHeight() / 2);
+
+            const maxX = $mainImage.width() - $lens.outerWidth();
+            const maxY = $mainImage.height() - $lens.outerHeight();
+
+            if (x > maxX) x = maxX;
+            if (x < 0) x = 0;
+            if (y > maxY) y = maxY;
+            if (y < 0) y = 0;
+
+            $lens.css({ left: x, top: y });
+            $result.css('background-position', `-${x * cx}px -${y * cy}px`);
+        });
+
+        $thumbnails.on('mouseover', function () {
+            const $this = $(this);
+            const newSrc = $this.find('img').attr('src');
+
+            $mainImage.attr('src', newSrc);
+            $('#modalMainImage').attr('src', newSrc);
+
+            if ($result.is(':visible')) {
+                $result.css('background-image', `url('${newSrc}')`);
+            }
+
+            $('.thumbnail-box').removeClass('border-warning').css('border-width', '1px');
+            $this.addClass('border-warning').css('border-width', '2px');
+        });
+
+        $imageContainer.on('click', function () {
+            var myModal = new bootstrap.Modal(document.getElementById('galleryModal'));
+            myModal.show();
+        });
+
+        $modalThumbnails.on('click', function () {
+            const newSrc = $(this).attr('src');
+
+            $('#modalMainImage').attr('src', newSrc);
+            $('.modal-thumb').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script>
+
+<style>
+    .img-zoom-container {
+        position: relative;
+        cursor: crosshair;
+    }
+
+    .img-zoom-lens {
+        position: absolute;
+        border: 1px solid #d4d4d4;
+        width: 150px;
+        height: 150px;
+        background-color: rgba(255, 255, 255, 0.4);
+        cursor: crosshair;
+        display: none;
+    }
+
+    .img-zoom-result {
+        position: absolute;
+        border: 1px solid #d4d4d4;
+        width: 500px;
+        height: 500px;
+        top: 0;
+        left: 105%;
+        z-index: 1000;
+        background-repeat: no-repeat;
+        background-color: white;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        display: none;
+    }
+
+    .thumbnail-box {
+        transition: all 0.2s;
+    }
+
+        .thumbnail-box:hover {
+            border-color: #e77600 !important;
+            box-shadow: 0 0 3px rgba(0,0,0,0.3);
+        }
+
+    .border-warning {
+        border-color: #e77600 !important;
+    }
+
+    .more-images-container {
+        position: relative;
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+    }
+
+    .more-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border-radius: 4px;
+    }
+
+    .modal-thumb {
+        cursor: pointer;
+        border: 1px solid #ddd;
+        transition: border 0.2s;
+    }
+
+        .modal-thumb:hover, .modal-thumb.active {
+            border: 2px solid #e77600;
+        }
+</style>

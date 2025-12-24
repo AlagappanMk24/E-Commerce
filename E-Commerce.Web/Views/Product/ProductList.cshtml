@@ -1,0 +1,204 @@
+﻿@using E_Commerce.Domain.Models
+@model ProductListViewModel
+
+@{
+    ViewData["Title"] = Model.PageTitle;
+}
+
+<div class="container-fluid px-5">
+    <div class="row">
+        <!-- Breadcrumb -->
+        <div class="col-12 breadcrumb-section">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    @if (!string.IsNullOrEmpty(Model.Breadcrumb.Primary))
+                    {
+                        <li class="breadcrumb-item">
+                            <a href="/@Model.Breadcrumb.Primary.ToLower()">@Model.Breadcrumb.Primary</a>
+                        </li>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.Breadcrumb.Section))
+                    {
+                        <li class="breadcrumb-item">
+                            <a href="/@Model.Breadcrumb.Primary.ToLower()/@Model.Breadcrumb.Section.ToLower()">@Model.Breadcrumb.Section</a>
+                        </li>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.Breadcrumb.Subcategory))
+                    {
+                        <li class="breadcrumb-item active" aria-current="page">@Model.Breadcrumb.Subcategory</li>
+                    }
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Left Sidebar - Dynamic Filters -->
+        <div class="col-md-3 filter-sidebar">
+            <div class="filter-wrapper">
+                @if (Model.CategoryLinks != null && Model.CategoryLinks.Any())
+                {
+                    <h2 class="filter-title">Categories</h2>
+
+                    <div class="category-links">
+                        @foreach (var link in Model.CategoryLinks)
+                        {
+                            <a href="@link.Url" class="category-link @(link.IsActive ? "active" : "")">@link.Title</a>
+                        }
+                    </div>
+
+                    <hr class="filter-divider" />
+                }
+
+                <!-- Dynamic Filters from Backend -->
+                @foreach (var filter in Model.Filters)
+                {
+                    <div class="filter-group">
+                        <button class="filter-header" type="button" data-bs-toggle="collapse" data-bs-target="#@(filter.Name)Filter">
+                            <span>@filter.DisplayName</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div id="@(filter.Name)Filter" class="collapse">
+                            <div class="filter-options">
+                                @foreach (var option in filter.Options)
+                                {
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox"
+                                               name="@filter.Name"
+                                               value="@option.Value"
+                                               class="filter-input"
+                                               data-filter-name="@filter.Name" />
+                                        <span class="filter-label">@option.Label</span>
+                                        <span class="filter-count">(@option.Count)</span>
+                                    </label>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+
+        <!-- Right Content Area -->
+        <div class="col-md-9">
+            <!-- Page Header -->
+            <div class="page-header text-center">
+                <h1>@Model.PageTitle</h1>
+                <p class="lead">@Model.PageDescription</p>
+            </div>
+
+            <!-- Results Bar -->
+            <div class="results-bar d-flex justify-content-between align-items-center">
+                <div class="results-count">
+                    <strong><span id="resultCount">@Model.TotalResults</span> Results:</strong>
+                </div>
+                <div class="sort-dropdown">
+                    <label for="sortSelect">SORT:</label>
+                    <select id="sortSelect" class="form-select" style="display: inline-block; width: auto;">
+                        <option value="best-matches" selected>Best Matches</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name-asc">Name: A to Z</option>
+                        <option value="name-desc">Name: Z to A</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="row product-grid" id="productGrid">
+                @foreach (var product in Model.Products)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="product-card">
+                            <!-- Product Badges -->
+                            @if (product.Features != null && product.Features.Contains("Exclusive"))
+                            {
+                                <span class="product-badge badge-exclusive">EXCLUSIVE</span>
+                            }
+                            @if (product.Features != null && product.Features.Contains("New"))
+                            {
+                                <span class="product-badge badge-new">NEW</span>
+                            }
+
+                            <!-- Product Image -->
+                            <a asp-controller="Product"
+                               asp-action="Details"
+                               asp-route-primary="@product.Category.Primary.ToLower()"
+                               asp-route-section="@product.Category.Section.ToLower()"
+                               asp-route-slug="@product.Slug.ToLower()"
+                               asp-route-id="@product.Id"
+                               class="text-decoration-none text-dark">
+
+                                <img src="@product.Media.MainImage" alt="@product.Name" class="product-image img-fluid" />
+                            </a>
+
+                            <!-- Wishlist Icon -->
+                            <button class="wishlist-btn" data-product-id="@product.Id">
+                                <i class="far fa-heart"></i>
+                            </button>
+
+                            <!-- Color Swatches -->
+                            @if (product.Variants != null && product.Variants.Count > 1)
+                            {
+                                <div class="color-swatches">
+                                    @foreach (var variant in product.Variants)
+                                    {
+                                        <button class="color-swatch @(variant.IsSelected ? "active" : "")"
+                                                data-style="@variant.StyleRef"
+                                                style="background-image: url('@variant.SwatchImage')">
+                                        </button>
+                                    }
+                                </div>
+                            }
+
+                            <!-- Product Info -->
+                            <div class="product-info">
+                                <h3 class="product-name">
+                                    <a href="@product.Url">@product.Name</a>
+                                </h3>
+                                <p class="product-price">@product.Price.Formatted</p>
+
+                                @if (product.Filters.UsaMade)
+                                {
+                                    <p class="product-feature">
+                                        <i class="fas fa-flag-usa"></i> Made in USA with Global Parts
+                                    </p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            @if (Model.Products.Count == 0)
+            {
+                <div class="no-results text-center py-5">
+                    <h3>No products found</h3>
+                    <p>Try adjusting your filters or browse all products.</p>
+                    <a href="/@Model.Breadcrumb.Primary.ToLower()/@Model.Breadcrumb.Section.ToLower()/all" class="btn btn-primary">View All Products</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Hidden data for JavaScript -->
+<input type="hidden" id="categoryPrimary" value="@Model.Breadcrumb.Primary" />
+<input type="hidden" id="categorySection" value="@Model.Breadcrumb.Section" />
+<input type="hidden" id="categorySubcategory" value="@Model.Breadcrumb.Subcategory" />
+
+@section Scripts {
+    <script src="~/js/product-filter.js"></script>
+    <script>
+        function navigateToProduct(primary, section, slug, id) {
+            const url = `/${primary.toLowerCase()}/${section.toLowerCase()}/${slug}/${id}`;
+            window.location.href = url;
+        }
+    </script>
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/product-list.css" />
+}

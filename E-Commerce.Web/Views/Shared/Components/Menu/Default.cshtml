@@ -1,0 +1,66 @@
+﻿@using E_Commerce.Application.Contracts.DTOs
+@model List<MenuItemDto>
+
+<ul class="navbar-nav gap-3 mx-auto">
+    @foreach (var item in Model)
+    {
+        @if (item.Title?.ToUpper() == "SALE")
+        {
+            <li class="nav-item">
+                <a class="nav-link text-danger" href="@item.Url">@item.Title</a>
+            </li>
+        }
+        else if (item.Children != null && item.Children.Any())
+        {
+            <li class="nav-item" data-menu-target="@item.Title">
+                <a class="nav-link" href="@item.Url">@item.Title.ToUpper()</a>
+                <div class="mega-menu-pane">
+                    <div class="container">
+                        <div class="row mega-content-container">
+                            @for (int i = 0; i < item.Children.Count; i++)
+                            {
+                                var column = item.Children[i];
+                                var isFeatured = column.Title == "General" ||
+                                column.Title == "Featured" ||
+                                column.Title == "Made in USA with Global Parts";
+                                var isLast = i == item.Children.Count - 1;
+                                var borderClass = isLast ? "" : "border-right-custom";
+                                var specialClass = isFeatured ? "featured-column" : "";
+
+                                <div class="col mega-column @borderClass @specialClass">
+                                    @if (!isFeatured && !string.IsNullOrEmpty(column.Title))
+                                    {
+                                        <h6>@column.Title</h6>
+                                    }
+
+                                    @if (column.Children != null && column.Children.Any())
+                                    {
+                                        <ul>
+                                            @foreach (var child in column.Children)
+                                            {
+                                                <li><a href="@child.Url">@child.Title</a></li>
+                                            }
+                                        </ul>
+                                    }
+
+                                    @if (!string.IsNullOrEmpty(column.Url) && column.Url != "#")
+                                    {
+                                        <div class="mt-2">
+                                            <a href="@column.Url" class="fw-bold text-dark" style="font-size:14px;">Shop All</a>
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </li>
+        }
+        else
+        {
+            <li class="nav-item">
+                <a class="nav-link" href="@item.Url">@item.Title.ToUpper()</a>
+            </li>
+        }
+    }
+</ul>

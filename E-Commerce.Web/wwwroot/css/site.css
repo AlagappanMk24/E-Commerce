@@ -1,0 +1,143 @@
+html {
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: "TradeGothicLT-Light", "TradeGothicLT-Light-fallback", Arial, sans-serif
+}
+
+.header_inner {
+    border-bottom: solid 1px #717171;
+    font-size: 1.25rem;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 1.25rem;
+}
+
+.navbar-nav .nav-item {
+    position: static !important;
+}
+
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000 !important;
+    padding: 1.5rem 1.2rem !important;
+    border-bottom: 4px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    border-bottom-color: #d31245;
+}
+
+.nav-link.text-danger {
+    color: #d31245 !important;
+}
+
+.mega-menu-pane {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%; /* Full Width */
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 40px 0;
+    z-index: 1000;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.navbar-nav .nav-item:hover .mega-menu-pane {
+    display: block;
+    opacity: 1;
+}
+
+.mega-column {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.border-right-custom {
+    border-right: 1px solid #e0e0e0;
+}
+
+.mega-column h6 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #000;
+    margin-bottom: 18px;
+    text-transform: capitalize;
+}
+
+/* Links List */
+.mega-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .mega-column ul li {
+        margin-bottom: 12px;
+    }
+
+        .mega-column ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+            transition: color 0.2s;
+        }
+
+            .mega-column ul li a:hover {
+                color: #d31245;
+                text-decoration: underline;
+            }
+
+.featured-column ul li a {
+    font-weight: 700; /* Bold */
+    color: #000;
+}
+
+
+/* Footer Link Hover Effect */
+
+footer a.text-secondary:hover {
+    color: #000 !important;
+    text-decoration: underline !important;
+}
+
+footer .form-control:focus {
+    box-shadow: none;
+    border-color: #000;
+}
+
+footer .social-icons a:hover {
+    opacity: 0.7;
+}
