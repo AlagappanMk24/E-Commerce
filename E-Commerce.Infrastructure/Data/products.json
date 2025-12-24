@@ -1,38 +1,38 @@
 [
   {
-    "id": 102,
-    "brand": "Urban Living",
-    "category": "Dining Room Furniture",
-    "category_image": "images/1-category.jpg"
+    "Id": 102,
+    "Brand": "Urban Living",
+    "Category": "Dining Room Furniture",
+    "CategoryImage": "images/1-category.jpg"
   },
   {
-    "id": 104,
-    "brand": "Iron & Wood Co.",
-    "category": "Dining Room Furniture",
-    "category_image": "images/2-category.jpg"
+    "Id": 104,
+    "Brand": "Iron & Wood Co.",
+    "Category": "Dining Room Furniture",
+    "CategoryImage": "images/2-category.jpg"
   },
   {
-    "id": 105,
-    "brand": "Studio K",
-    "category": "Kitchen Furniture",
-    "category_image": "images/3-category.jpg"
+    "Id": 105,
+    "Brand": "Studio K",
+    "Category": "Kitchen Furniture",
+    "CategoryImage": "images/3-category.jpg"
   },
   {
-    "id": 106,
-    "brand": "Royal Interiors",
-    "category": "Dining Room Furniture",
-    "category_image": "images/4-category.jpg"
+    "Id": 106,
+    "Brand": "Royal Interiors",
+    "Category": "Dining Room Furniture",
+    "CategoryImage": "images/4-category.jpg"
   },
   {
-    "id": 107,
-    "brand": "SpaceCrafts",
-    "category": "Dining Room Furniture",
-    "category_image": "images/5-category.jpg"
+    "Id": 107,
+    "Brand": "SpaceCrafts",
+    "Category": "Dining Room Furniture",
+    "CategoryImage": "images/5-category.jpg"
   },
   {
-    "id": 108,
-    "brand": "Vintage Barn",
-    "category": "Dining Room Furniture",
-    "category_image": "images/6-category.jpg"
+    "Id": 108,
+    "Brand": "Vintage Barn",
+    "Category": "Dining Room Furniture",
+    "CategoryImage": "images/6-category.jpg"
   }
 ]

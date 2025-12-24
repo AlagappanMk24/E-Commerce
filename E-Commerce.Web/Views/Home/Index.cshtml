@@ -18,7 +18,13 @@
                             <div class="col-md-4 col-sm-6 mb-4">
                                 <div class="card h-100 border-0 shadow-sm product-card">
 
-                                    <a asp-controller="Home" asp-action="Details" asp-route-id="@product.Id class="text-decoration-none text-dark">
+                                    <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id" class="text-decoration-none text-dark">
+                                        <div class="img-wrapper">
+                                            <img src="@(product.CategoryImage != null ? product.CategoryImage : "https://via.placeholder.com/300")"
+                                                 class="card-img"
+                                                 alt="@product.Brand">
+                                        </div>
+
                                         <div class="card-body p-2">
                                             <h6 class="card-title text-uppercase fw-bold mb-1 text-center" title="@product.Brand" style="line-height: 1.4em; max-height: 2.8em; overflow: hidden;">
                                                 @product.Brand

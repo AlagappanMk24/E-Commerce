@@ -12,10 +12,18 @@ namespace E_Commerce.Web.Controllers
         private readonly IWebHostEnvironment _env = env;
         public IActionResult Index()
         {
-            var filePath = Path.Combine(
-                  _env.ContentRootPath,
-                  "data",
-                  "products.json");
+            //var filePath = Path.Combine(
+            //      _env.ContentRootPath,
+            //      "data",
+            //      "products.json");
+
+            // Navigates out of the Web project and into the Infrastructure project folder
+            var filePath = Path.GetFullPath(Path.Combine(
+                _env.ContentRootPath,
+                "..",
+                "E-Commerce.Infrastructure",
+                "Data",
+                "products.json"));
 
             if (!System.IO.File.Exists(filePath))
             {
@@ -25,9 +33,7 @@ namespace E_Commerce.Web.Controllers
 
             var json = System.IO.File.ReadAllText(filePath);
 
-            var products = JsonSerializer.Deserialize<List<FeaturedCategory>>(
-                json,
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            var products = JsonSerializer.Deserialize<List<FeaturedCategory>>(json);
 
             return View(products ?? []);
         }

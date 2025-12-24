@@ -8,7 +8,7 @@ namespace E_Commerce.Infrastructure.Services
     public class ProductService : IProductService
     {
         private readonly IHostEnvironment _environment;
-        private readonly List<Product> _products = new();
+        private readonly List<Product> _products = [];
 
         private static readonly JsonSerializerOptions JsonOptions =
             new() { PropertyNameCaseInsensitive = true };
@@ -22,10 +22,17 @@ namespace E_Commerce.Infrastructure.Services
         #region Data Loading
         private void LoadProducts()
         {
-            var filePath = Path.Combine(
-               _environment.ContentRootPath,
-               "data",
-               "featuredProduct.json");
+            //var filePath = Path.Combine(
+            //   _environment.ContentRootPath,
+            //   "data",
+            //   "featuredProduct.json");
+            // Navigates up from the current project root into the Infrastructure folder
+            var filePath = Path.GetFullPath(Path.Combine(
+                _environment.ContentRootPath,
+                "..",
+                "E-Commerce.Infrastructure",
+                "Data",
+                "featuredProduct.json"));
 
             if (!File.Exists(filePath))
                 return;
@@ -80,6 +87,7 @@ namespace E_Commerce.Infrastructure.Services
 
             return Task.FromResult(query.ToList());
         }
+
         public Task<List<Product>> GetProductsByCollectionAsync(string collection)
         {
             var result = _products.Where(p =>
@@ -117,7 +125,7 @@ namespace E_Commerce.Infrastructure.Services
 
             AddCommonFilters(filters, products);
 
-            return Task.FromResult(filters.Where(f => f.Options.Any()).ToList());
+            return Task.FromResult(filters.Where(f => f.Options.Count != 0).ToList());
         }
 
         private static void AddFootwearFilters(List<FilterDefinition> filters, List<Product> products)
